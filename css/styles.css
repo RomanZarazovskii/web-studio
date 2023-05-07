@@ -36,11 +36,6 @@ a {
   color: inherit;
 }
 
-a:hover,
-a:focus {
-  color: #2196F3;
-}
-
 /* Header */
 
 .container {
@@ -81,6 +76,11 @@ a:focus {
 
 .contact {
   display: flex;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: #2196F3;
 }
 
 .header-icon {
@@ -330,4 +330,25 @@ section {
   justify-content: space-between;
 }
 
-.activity-list-item {}
+.activity-list-item {
+  position: relative;
+}
+
+.activity-text {
+  position: absolute;
+  bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
