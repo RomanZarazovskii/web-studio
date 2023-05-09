@@ -132,6 +132,9 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero-title {
@@ -232,7 +235,6 @@ section {
 
 .icons-list {
   display: flex;
-  justify-content: center;
 }
 
 .team-list-icon {
