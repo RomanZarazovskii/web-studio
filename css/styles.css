@@ -429,3 +429,28 @@ section {
 .footer-submit-icon {
   margin-left: 10px;
 }
+
+.social-icon-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-join-list {
+  display: flex;
+}
+
+.footer-join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.studio {
+  color: #FFFFFF;
+}
+
+.footer-contacts-item:first-child {
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+
+.footer-contacts-item:not(:first-child) {
+  margin-top: 10px;
+}
