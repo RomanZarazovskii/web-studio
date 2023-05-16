@@ -479,8 +479,25 @@ section {
   align-items: center;
 }
 
-.clients-list-item {
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 16px 32px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid #2196F3;
+}
+
+.clients-list-link:hover .clients-icon,
+.clients-list-link:focus .clients-icon {
+  fill: #2196F3;
+}
+
+.clients-icon {
+  fill: #AFB1B8;
 }
