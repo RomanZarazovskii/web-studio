@@ -45,6 +45,22 @@ a {
   padding-right: 15px;
 }
 
+.current {
+  color: #2196F3;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: #2196F3;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -72,6 +88,11 @@ a {
 
 .nav-list-item:hover {
   color: #2196F3;
+}
+
+.nav-list-link {
+  position: relative;
+  padding-bottom: 28px;
 }
 
 .contact {
@@ -235,18 +256,15 @@ section {
 
 .icons-list {
   display: flex;
+  justify-content: center;
 }
 
 .team-list-icon {
   fill: #AFB1B8;
 }
 
-.icons-list-item {
+.icons-list {
   margin-bottom: 30px;
-}
-
-.icons-list-item:not(:last-child) {
-  margin-left: 10px;
 }
 
 .social-icon-link {
