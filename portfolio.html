@@ -21,14 +21,14 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header portfolio">
       <div class="container">
         <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
         <nav>
           <ul class="nav-list">
-            <li class="nav-list-item"><a href="#">Студія</a></li>
-            <li class="nav-list-item"><a href="#">Портфоліо</a></li>
-            <li class="nav-list-item"><a href="#">Контакти</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="./index.html">Студія</a></li>
+            <li class="nav-list-item"><a class="nav-list-link current" href="#">Портфоліо</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contact">
@@ -55,28 +55,35 @@
     <main>
       <section class="projects-section">
         <div class="container">
-          <div class="buttons-nav">
-            <ul class="buttons-nav-list">
-              <li class="buttons-nav-item">
-                <button type="button" class="buttons-nav-button">Усі</button>
-              </li>
-              <li class="buttons-nav-item">
-                <button type="button" class="buttons-nav-button">Веб-сайти</button>
-              </li>
-              <li class="buttons-nav-item">
-                <button type="button" class="buttons-nav-button">Додатки</button>
-              </li>
-              <li class="buttons-nav-item">
-                <button type="button" class="buttons-nav-button">Дизайн</button>
-              </li>
-              <li class="buttons-nav-item">
-                <button type="button" class="buttons-nav-button">Маркетинг</button>
-              </li>
-            </ul>
-          </div>
+          <ul class="buttons-nav-list">
+            <li class="buttons-nav-item">
+              <button type="button" class="buttons-nav-button">Усі</button>
+            </li>
+            <li class="buttons-nav-item">
+              <button type="button" class="buttons-nav-button">Веб-сайти</button>
+            </li>
+            <li class="buttons-nav-item">
+              <button type="button" class="buttons-nav-button">Додатки</button>
+            </li>
+            <li class="buttons-nav-item">
+              <button type="button" class="buttons-nav-button">Дизайн</button>
+            </li>
+            <li class="buttons-nav-item">
+              <button type="button" class="buttons-nav-button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Projects list -->
           <ul class="projects-list">
             <li class="projects-list-item">
-              <img class="projects-image" src="./images/projects-image-1.jpg" alt="Members on the website" />
+              <div class="projects-thumb">
+                <img class="projects-image" src="./images/projects-image-1.jpg" alt="Members on the website" />
+                <div class="text-overlay">
+                  <p class="projects-thumb-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                    відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
               <h3 class="projects-title">Технокряк</h3>
               <p class="projects-text">Веб-сайт</p>
             </li>
@@ -124,5 +131,70 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-box">
+        <div class="footer-contacts">
+          <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4266746,30.5380237,19.86z/data=!4m6!3m5!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!16s%2Fg%2F1tctq5jv"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-contacts-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="footer-contacts-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <h4 class="footer-join-title">Приєднуйтесь</h4>
+          <ul class="footer-join-list">
+            <li class="footer-join-item">
+              <a class="social-icon-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
+                <svg class="team-list-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-join-item">
+              <a class="social-icon-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/?lang=uk">
+                <svg class="team-list-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-join-item">
+              <a class="social-icon-link" target="_blank" rel="noopener noreferrer" href="https://uk-ua.facebook.com/">
+                <svg class="team-list-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-join-item">
+              <a class="social-icon-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/">
+                <svg class="team-list-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-submit">
+          <h4 class="footer-join-title">Підпишіться на розсилку</h4>
+          <form class="submit-form">
+            <input class="submit-input" type="email" placeholder="E-mail" />
+            <button type="submit" class="footer-button">
+              Підписатися
+              <svg class="footer-submit-icon" width="24" height="24">
+                <use href="./images/icons/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
