@@ -16,7 +16,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Web-studio</title>
   </head>
@@ -32,11 +31,16 @@
             <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
           </ul>
         </nav>
+        <button type="button" class="burger__button">
+          <svg class="burger__button__icon">
+            <use href="./images/icons/symbol-defs.svg#icon-burger-button"></use>
+          </svg>
+        </button>
         <ul class="contact">
           <li class="contact-item">
             <a href="mailto: info@devstudio.com">
               <svg class="header-icon" width="16px" height="12px">
-                <use href="./images/icons/symbol-defs.svg#icon-envelope-hover"></use>
+                <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -44,7 +48,7 @@
           <li class="contact-item">
             <a href="tel: +38 096 111 11 11">
               <svg class="header-icon" width="10px" height="16px">
-                <use href="./images/icons/symbol-defs.svg#icon-Vector"></use>
+                <use href="./images/icons/symbol-defs.svg#icon-mobile"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -62,84 +66,86 @@
         <button type="button" class="hero-button">Замовити послугу</button>
       </section>
       <!-- Adnantage-section -->
-      <section class="advantage-section">
-        <div class="container">
-          <ul class="advantage-list">
-            <li class="advantage-list-item">
-              <div class="box">
-                <svg class="advantage-icon" width="70" height="70">
-                  <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-1"></use>
-                </svg>
-              </div>
-              <h3 class="advantage-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="advantage-text">
-                Ідейні міркування, і навіть початок <br />
-                повсякденної роботи з формування <br />
-                позиції.
-              </p>
-            </li>
-            <li class="advantage-list-item">
-              <div class="box">
-                <svg class="advantage-icon" width="70" height="70">
-                  <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-2"></use>
-                </svg>
-              </div>
-              <h3 class="advantage-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="advantage-text">
-                Завдання організації, особливо рамки <br />
-                і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="advantage-list-item">
-              <div class="box">
-                <svg class="advantage-icon" width="70" height="70">
-                  <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-3"></use>
-                </svg>
-              </div>
-              <h3 class="advantage-title">ПЛАНУВАННЯ</h3>
-              <p class="advantage-text">
-                Так само консультація з широким <br />
-                активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="advantage-list-item">
-              <div class="box">
-                <svg class="advantage-icon" width="70" height="70">
-                  <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-4"></use>
-                </svg>
-              </div>
-              <h3 class="advantage-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="advantage-text">
-                Значимість цих проблем настільки <br />
-                очевидна, що реалізація планових <br />
-                завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Activity section -->
-      <section class="activity-section">
-        <div class="container">
-          <h2 class="activity-title">Чим ми займаємося</h2>
-          <ul class="activity-list">
-            <li class="activity-list-item">
-              <img class="activity-image" src="./images/activity-image-1.jpg" alt="programme" />
-              <p class="activity-text">Десктопні додатки</p>
-            </li>
-            <li class="activity-list-item">
-              <img class="activity-image" src="./images/activity-image-2.jpg" alt="phone" />
-              <p class="activity-text">Мобільні додатки</p>
-            </li>
-            <li class="activity-list-item">
-              <img class="activity-image" src="./images/activity-image-3.jpg" alt="design" />
-              <p class="activity-text">Дизайнерські рішення</p>
-            </li>
-          </ul>
-        </div>
+      <section class="section">
+        <section class="advantage-section section">
+          <div class="container">
+            <ul class="advantage-list">
+              <li class="advantage-list-item">
+                <div class="box">
+                  <svg class="advantage-icon" width="70" height="70">
+                    <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-1"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="advantage-text">
+                  Ідейні міркування, і навіть початок <br />
+                  повсякденної роботи з формування <br />
+                  позиції.
+                </p>
+              </li>
+              <li class="advantage-list-item">
+                <div class="box">
+                  <svg class="advantage-icon" width="70" height="70">
+                    <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-2"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage-title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="advantage-text">
+                  Завдання організації, особливо рамки <br />
+                  і місце навчання кадрів тягне у себе.
+                </p>
+              </li>
+              <li class="advantage-list-item">
+                <div class="box">
+                  <svg class="advantage-icon" width="70" height="70">
+                    <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-3"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage-title">ПЛАНУВАННЯ</h3>
+                <p class="advantage-text">
+                  Так само консультація з широким <br />
+                  активом значною мірою зумовлює.
+                </p>
+              </li>
+              <li class="advantage-list-item">
+                <div class="box">
+                  <svg class="advantage-icon" width="70" height="70">
+                    <use href="./images/icons/symbol-defs.svg#icon-advantage-icon-4"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="advantage-text">
+                  Значимість цих проблем настільки <br />
+                  очевидна, що реалізація планових <br />
+                  завдань.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Activity section -->
+        <section class="activity-section">
+          <div class="container">
+            <h2 class="activity-title">Чим ми займаємося</h2>
+            <ul class="activity-list">
+              <li class="activity-list-item">
+                <img class="activity-image" src="./images/activity-image-1.jpg" alt="programme" />
+                <p class="activity-text">Десктопні додатки</p>
+              </li>
+              <li class="activity-list-item">
+                <img class="activity-image" src="./images/activity-image-2.jpg" alt="phone" />
+                <p class="activity-text">Мобільні додатки</p>
+              </li>
+              <li class="activity-list-item">
+                <img class="activity-image" src="./images/activity-image-3.jpg" alt="design" />
+                <p class="activity-text">Дизайнерські рішення</p>
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
       <!-- Team section -->
-      <section class="team-section">
+      <section class="team-section section">
         <div class="container">
           <h2 class="team-subtitle">Наша команда</h2>
           <ul class="team-list">
@@ -367,7 +373,7 @@
         </div>
       </section>
       <!-- Clients section -->
-      <section class="clients-section">
+      <section class="clients-section section">
         <div class="container">
           <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -418,7 +424,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer-box">
         <div class="footer-contacts">
           <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
