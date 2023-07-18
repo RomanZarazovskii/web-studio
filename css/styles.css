@@ -1,3 +1,43 @@
+/* Activity section */
+
+.activity-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-list-item {
+  position: relative;
+}
+
+.activity-text {
+  position: absolute;
+  bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Team section */
 
 .team-section {
@@ -95,85 +135,6 @@
 .social-icon-link:hover .team-list-icon,
 .social-icon-link:focus .team-list-icon {
   fill: #FFFFFF;
-}
-
-/* Advantage section */
-
-.advantage-section {
-  padding-top: 94px;
-}
-
-.advantage-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.advantage-icon {
-   margin-top: 25px;
-   margin-left: 100px;
-}
-
-.box {
-  width: 270px;
-  height: 120px;
-  background: #F5F4FA;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.advantage-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-}
-
-.advantage-text {
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-/* Activity section */
-
-.activity-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
-.activity-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.activity-list-item {
-  position: relative;
-}
-
-.activity-text {
-  position: absolute;
-  bottom: 0;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Footer */

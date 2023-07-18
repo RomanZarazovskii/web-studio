@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-photo.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -53,7 +53,7 @@
 
 @media screen and (max-width:767px) {
     .hero {
-       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mobile.jpg);
+       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
        display: flex;
        flex-direction: column;
        align-items: center;
