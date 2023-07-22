@@ -1,13 +1,21 @@
 @import "./utils/var";
+
 @import "./base/reset";
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/footer";
+
 @import "./main/activity";
 @import "./main/advantages";
 @import "./main/team";
 @import "./main/clients";
 @import "./main/portfolio";
+
+@import "./components/backdrop";
+@import "./components/mobile-munu";
+@import "./components/modal-window";
+@import "./components/modal-form";
