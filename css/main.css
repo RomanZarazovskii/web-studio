@@ -164,6 +164,20 @@ body {
     padding-bottom: 20px;
   }
 }
+.nav-list-item:hover {
+  color: #2196F3;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: #2196F3;
+}
+
+.contact-item:hover {
+  color: #2196F3;
+  fill: #2196F3;
+}
+
 .hero {
   max-width: 1600px;
   height: 600px;
