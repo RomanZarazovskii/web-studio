@@ -1,7 +1,7 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     & .container {
         display: flex;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (max-width:767px) {
-    nav {
+    .nav-list {
         display: none;
     }
 
@@ -55,25 +55,54 @@
 
     .nav-list {
         display: flex;
+        align-items: center;
     }
 
     .nav-list-item:not(:last-child) {
         margin-right: 50px;
     }
 
-    .header .container {
+    .contact-item {
+        font-weight: 500;
+        letter-spacing: 0.24px;
+    }
+
+    .header-icon {
+        margin-right: 8px;
+    }
+
+    .contact-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+        .current {
+            color: #2196F3;
+        }
+}
+
+@media screen and (min-width:1200px) {
+    .contact {
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
-    .contact {
-        display: block;
+    .contact-item:not(:last-child) {
+         margin-bottom: 0;
     }
-}
 
-.current {
-    color: #2196F3;
+    .contact-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .contact-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 // .current::after {
@@ -96,45 +125,39 @@
 //     margin-bottom: 25px;
 // }
 
-.nav-list-item:hover {
-    color: #2196F3;
-}
+// .nav-list-item:hover {
+//     color: #2196F3;
+// }
 
-.nav-list-link {
-    position: relative;
-    padding-bottom: 28px;
-}
+// .nav-list-link {
+//     position: relative;
+//     padding-bottom: 28px;
+// }
 
 // .contact {
 //     display: flex;
 // }
 
-.contact-item:hover,
-.contact-item:focus {
-    color: #2196F3;
-}
+// .contact-item:hover,
+// .contact-item:focus {
+//     color: #2196F3;
+// }
 
-.header-icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
+// .header-icon {
+//     margin-right: 10px;
+//     fill: currentColor;
+// }
 
-.contact-item a {
-    display: flex;
-    align-items: center;
-}
+// .contact-item a {
+//     display: flex;
+//     align-items: center;
+// }
 
-.contact-item:not(:last-child) {
-    margin-right: 30px;
-}
+// .contact-item:not(:last-child) {
+//     margin-right: 30px;
+// }
 
-.contact-item:hover {
-    color: #2196F3;
-    fill: #2196F3;
-}
-
-@media screen and (min-width:1200px) {
-    .contact {
-        display: flex;
-    }
-}
+// .contact-item:hover {
+//     color: #2196F3;
+//     fill: #2196F3;
+// }

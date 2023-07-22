@@ -77,8 +77,8 @@ body {
 }
 .header {
   border-bottom: 1px solid #ECECEC;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header .container {
   display: flex;
@@ -99,7 +99,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  nav {
+  .nav-list {
     display: none;
   }
   .contact {
@@ -125,59 +125,43 @@ body {
   }
   .nav-list {
     display: flex;
+    align-items: center;
   }
   .nav-list-item:not(:last-child) {
     margin-right: 50px;
   }
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .contact-item {
+    font-weight: 500;
+    letter-spacing: 0.24px;
   }
-  .contact {
-    display: block;
+  .header-icon {
+    margin-right: 8px;
+  }
+  .contact-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .current {
+    color: #2196F3;
   }
 }
-.current {
-  color: #2196F3;
-}
-
-.nav-list-item:hover {
-  color: #2196F3;
-}
-
-.nav-list-link {
-  position: relative;
-  padding-bottom: 28px;
-}
-
-.contact-item:hover,
-.contact-item:focus {
-  color: #2196F3;
-}
-
-.header-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contact-item a {
-  display: flex;
-  align-items: center;
-}
-
-.contact-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.contact-item:hover {
-  color: #2196F3;
-  fill: #2196F3;
-}
-
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    align-items: center;
+  }
+  .contact-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .contact-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .contact-link {
+    display: flex;
+    align-items: center;
+  }
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 .hero {
