@@ -22,24 +22,22 @@
     color: $linkColor;
 }
 
-@media screen and (max-width:767px) {
-    .nav-list {
-        display: none;
-    }
+.nav-list {
+    display: none;
+}
 
-    .contact {
-        display: none;
-    }
+.contact {
+    display: none;
+}
 
-    .burger__button {
-        border: none;
-        background-color: transparent;
-    }
-    
-    .burger__button__icon {
-        width: 40px;
-        height: 40px;
-    }
+.burger__button {
+    border: none;
+    background-color: transparent;
+}
+
+.burger__button__icon {
+    width: 40px;
+    height: 40px;
 }
 
 @media screen and (min-width:768px) {
@@ -75,9 +73,13 @@
         margin-bottom: 10px;
     }
 
-        .current {
-            color: #2196F3;
-        }
+    .current {
+        color: #2196F3;
+    }
+
+    .contact {
+        display: block;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -87,7 +89,7 @@
     }
 
     .contact-item:not(:last-child) {
-         margin-bottom: 0;
+        margin-bottom: 0;
     }
 
     .contact-item:not(:last-child) {

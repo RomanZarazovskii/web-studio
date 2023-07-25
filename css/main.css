@@ -43,7 +43,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -98,22 +97,24 @@ body {
   color: #2196F3;
 }
 
-@media screen and (max-width: 767px) {
-  .nav-list {
-    display: none;
-  }
-  .contact {
-    display: none;
-  }
-  .burger__button {
-    border: none;
-    background-color: transparent;
-  }
-  .burger__button__icon {
-    width: 40px;
-    height: 40px;
-  }
+.nav-list {
+  display: none;
 }
+
+.contact {
+  display: none;
+}
+
+.burger__button {
+  border: none;
+  background-color: transparent;
+}
+
+.burger__button__icon {
+  width: 40px;
+  height: 40px;
+}
+
 @media screen and (min-width: 768px) {
   .nav-list-item {
     color: #212121;
@@ -142,6 +143,9 @@ body {
   }
   .current {
     color: #2196F3;
+  }
+  .contact {
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -179,33 +183,32 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: #C4C4C4;
 }
 
 .hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  color: #FFF;
   text-align: center;
-  letter-spacing: 0.06em;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 42px;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
-  color: #FFFFFF;
   margin-bottom: 30px;
 }
 
 .hero-button {
-  display: inline-block;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -224,28 +227,40 @@ body {
   background: #188CE8;
 }
 
-@media screen and (max-width: 767px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px), (min-resolution: 2dppx) and (max-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
+    height: 600px;
   }
   .hero-title {
-    font-size: 26px;
-    line-height: 42px;
-    letter-spacing: 1.56px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
   }
-  .hero-button {
-    width: 201px;
-    letter-spacing: 0.96px;
-    padding: 10px 24px;
-    font-size: 16px;
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
   }
 }
 .backdrop {
@@ -272,7 +287,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vw;
+    height: 796px;
     overflow: auto;
     background-color: #FFF;
     color: #212121;
@@ -290,6 +305,9 @@ body {
     pointer-events: auto;
     transform: translateX(0);
     transition: opacity 250ms ease-in, transform 250ms ease-in;
+  }
+  .menu {
+    display: block;
   }
   .mobile-menu__container {
     position: relative;
@@ -313,11 +331,8 @@ body {
     font-weight: 500;
     letter-spacing: 0.8px;
   }
-  .menu-list-item:not(:last-child) {
-    margin-bottom: 32px;
-  }
   .menu-list {
-    margin-bottom: 302px;
+    margin-bottom: 202px;
   }
   .menu-contact-item:first-child {
     color: #2196F3;
@@ -336,6 +351,7 @@ body {
   }
   .menu-social-list {
     display: flex;
+    justify-content: space-between;
   }
   .menu-social-item {
     color: #2196F3;
@@ -346,6 +362,7 @@ body {
   }
   .menu-social-item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
