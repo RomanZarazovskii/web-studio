@@ -46,7 +46,7 @@
     top: 50%;
 }
 
-.modal-form-input:focus + .modal-icon {
+.modal-form-input:focus+.modal-icon {
     fill: $linkColor;
 }
 
@@ -106,5 +106,5 @@
 }
 
 .modal-button:hover {
-   background-color: #188CE8;
+    background-color: #188CE8;
 }
