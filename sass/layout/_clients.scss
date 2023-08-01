@@ -1,12 +1,6 @@
-.clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .clients-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -17,7 +11,14 @@
 .clients-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.clients-list-item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    width: 210px;
+    height: 92px;
 }
 
 .clients-list-link {
@@ -41,4 +42,21 @@
 
 .clients-icon {
     fill: #AFB1B8;
+}
+
+@media screen and (min-width:768px) {
+    .clients-list-item {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .clients-list {
+        flex-wrap: nowrap;
+    }
+
+    .clients-title {
+        font-size: 36px;
+        letter-spacing: 1.08px;
+    }
 }
