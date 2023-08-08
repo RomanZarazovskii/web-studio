@@ -34,3 +34,13 @@
 .portfolio {
     border-bottom: 1px solid #ECECEC;
 }
+
+.mobile-btn {
+    display: flex;
+}
+
+@media screen and (max-width:767px) {
+    .mobile-btn {
+        margin-top: 15px;
+    }
+}
