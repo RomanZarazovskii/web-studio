@@ -55,12 +55,17 @@
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
-    cursor: pointer;
     box-sizing: border-box;
 
-    // padding-top: 12px;
     padding-left: 16px;
     margin-bottom: 20px;
+
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border-color: $linkColor;
+    }
 }
 
 .modal-form-input-comment:focus {
@@ -75,6 +80,13 @@
 
 .modal-checkbox-text {
     letter-spacing: 0.36px;
+    font-size: 12px;
+}
+
+@media screen and (min-width:1200px) {
+    .modal-checkbox-text {
+        font-size: 14px;
+    }
 }
 
 .checkbox-text-link {
@@ -88,6 +100,9 @@
 }
 
 .modal-button {
+    position: absolute;
+    left: 25%;
+
     margin-top: 31px;
     width: 200px;
     height: 50px;
