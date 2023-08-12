@@ -112,3 +112,11 @@
     color: #2196F3;
     fill: #2196F3;
 }
+
+.contact-item {
+    fill: $mainTextColor;
+}
+
+.nav-list-item:hover {
+    color: $linkColor;
+}
