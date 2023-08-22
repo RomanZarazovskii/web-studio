@@ -32,6 +32,11 @@
             <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
           </ul>
         </nav>
+        <button type="button" class="burger__button" data-menu-button>
+          <svg class="burger__button__icon" width="40" height="40">
+            <use href="./images/icons/symbol-defs.svg#icon-burger-button"></use>
+          </svg>
+        </button>
         <ul class="contact">
           <li class="contact-item">
             <a href="mailto: info@devstudio.com" class="contact-link">
@@ -50,6 +55,43 @@
             >
           </li>
         </ul>
+      </div>
+      <!-- Mobile menu -->
+      <div data-menu class="mobile-menu">
+        <div class="container mobile-menu__container">
+          <button data-menu-close class="mobile-menu__close-btn" type="button">
+            <svg width="24" height="24" class="close-btn-icon">
+              <use href="./images/icons/symbol-defs.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <div class="menu">
+            <ul class="menu-list">
+              <li class="menu-list-item"><a class="menu-list-link" href="./index.html">Студія</a></li>
+              <li class="menu-list-item"><a class="menu-list-link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="menu-list-item"><a class="menu-list-link" href="#">Контакти</a></li>
+            </ul>
+            <ul class="menu-contact-list">
+              <li class="menu-contact-item">
+                <a class="menu-contact-link" href="tel: +38 096 111 11 11">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-contact-item">
+                <a class="menu-contact-link" href="mailto: info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu-social-list">
+              <li class="menu-social-item">
+                <a class="menu-social-link" href="https://www.instagram.com/">Instagram</a>
+              </li>
+              <li class="menu-social-item"><a class="menu-social-link" href="https://twitter.com/">Twitter</a></li>
+              <li class="menu-social-item">
+                <a class="menu-social-link" href="https://uk-ua.facebook.com/">Facebook</a>
+              </li>
+              <li class="menu-social-item">
+                <a class="menu-social-link" href="https://www.linkedin.com/">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Projects section -->
